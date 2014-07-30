@@ -11,10 +11,14 @@
 @import "sprites/*.png";
 @include all-sprites-sprites;
 
+$dot-unit: 40px;
 body {
   background-color: $md-red-300;
   font-family: sans-serif;
   font-size: 16px;
+  background-image: radial-gradient(#fff 9px, transparent 10px), radial-gradient(#fff 9px, transparent 10px);
+  background-size: $dot-unit * 2, $dot-unit * 2;
+  background-position: 0 0, $dot-unit $dot-unit;
   line-height: 1.5;
 }
 
