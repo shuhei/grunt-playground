@@ -56,6 +56,16 @@ module.exports = function(grunt) {
           jshintrc: true
         }
       }
+    },
+    imagemin: {
+      all: {
+        files: [{
+          expand: true,
+          cwd: 'src/img/',
+          src: ['*.{jpg,svg,png,gif}'],
+          dest: 'public/img/'
+        }]
+      }
     }
   });
 
@@ -66,6 +76,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-open');
 
   grunt.registerTask('serve', ['connect:server:keepalive']);

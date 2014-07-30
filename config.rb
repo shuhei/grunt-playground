@@ -3,10 +3,14 @@ require 'compass-normalize'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "public/css"
-sass_dir = "src/sass"
-images_dir = "src/img"
-javascripts_dir = "src/js"
+project_path = "src"
+
+sass_dir = "sass"
+images_dir = "img"
+javascripts_dir = "js"
+
+css_path = "public/css"
+generated_images_path = "public/img"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

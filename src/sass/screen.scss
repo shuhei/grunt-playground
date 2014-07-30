@@ -7,32 +7,86 @@
 @import "normalize";
 @import "_colors";
 
+@import "compass/utilities/sprites";
+@import "sprites/*.png";
+@include all-sprites-sprites;
+
 body {
   background-color: $md-red-300;
   font-family: sans-serif;
   font-size: 16px;
+  line-height: 1.5;
 }
 
 .header {
   background: #fff;
-  padding: 1em;
+  height: 64px;
+  padding: 0.5em 1em;
+}
+
+.header-main {
+  width: 50%;
+  float: left;
+}
+
+.header-menu {
+  float: right;
+  width: 50%;
+  text-align: right;
 }
 
 .header-title {
+  display: inline-block;
   font-weight: bold;
-  margin: 0;
+  margin: 0;;
   padding: 0;
+  vertical-align: top;
+  padding-top: 1.45em;
 }
 
 .content {
-  margin: 2em auto;
+  margin: 3em auto;
   padding: 1em 2em;
-  width: 900px;
+  max-width: 900px;
   background-color: #fff;
   color: #333;
 }
 
-.first-heading {
+.content-footer {
+  margin: 2em 0 1em;
+  text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  .content-image {
+    width: 100%;
+  }
+}
+
+.primary-heading {
   font-weight: bold;
   font-size: 3em;
+}
+
+.img-left {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+
+// Sprites
+.sprites-icecream {
+  display: inline-block;
+  height: sprites-sprite-height(icecream);
+  width: sprites-sprite-width(icecream);
+}
+.sprites-wine {
+  display: inline-block;
+  height: sprites-sprite-height(wine);
+  width: sprites-sprite-width(wine);
+}
+.sprites-cafe {
+  display: inline-block;
+  height: sprites-sprite-height(cafe);
+  width: sprites-sprite-width(cafe);
 }
