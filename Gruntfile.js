@@ -83,4 +83,5 @@ module.exports = function(grunt) {
   grunt.registerTask('check', ['jshint']);
   grunt.registerTask('build', ['check', 'copy', 'compass', 'uglify', 'imagemin']);
   grunt.registerTask('dev', ['build', 'connect:server', 'open:dist', 'watch']);
+  grunt.registerTask('default', ['dev']);
 };
