@@ -10,3 +10,7 @@ Grunt を使ってみるためのプロジェクトです。
 - CSS Sprite の作成
 - JavaScript, CSS の結合
 - JavaScript, CSS の圧縮
+
+スライドはこちら。
+
+https://speakerdeck.com/shuhei/introduction-to-grunt
