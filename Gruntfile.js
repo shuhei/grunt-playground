@@ -80,6 +80,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-open');
 
   grunt.registerTask('serve', ['connect:server:keepalive']);
-  grunt.registerTask('build', ['copy', 'compass', 'uglify']);
+  grunt.registerTask('check', ['jshint']);
+  grunt.registerTask('build', ['check', 'copy', 'compass', 'uglify', 'imagemin']);
   grunt.registerTask('dev', ['build', 'connect:server', 'open:dist', 'watch']);
 };
